@@ -6,7 +6,14 @@ gem 'bootstrap-sass'
 gem 'sass-rails'
 gem 'font-awesome-sass'
 
+# Analytics
 gem 'mixpanel-ruby'
+
+# User Authentication
+gem 'devise'
+
+# Manage ENV variables locally
+gem 'figaro'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'

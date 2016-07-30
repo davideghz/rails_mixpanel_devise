@@ -25,3 +25,5 @@
 
 ## Directory-based project format:
 .idea/
+# Ignore application configuration
+/config/application.yml

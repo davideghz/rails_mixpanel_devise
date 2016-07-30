@@ -9,6 +9,10 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render 'layouts/header' %>
+    <div class="container">
+      <%= render 'layouts/flashmessages' %>
+      <%= yield %>
+    </div>
   </body>
 </html>
