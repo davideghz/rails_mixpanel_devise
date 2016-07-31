@@ -9,7 +9,8 @@ class ApplicationController < ActionController::Base
     if user_id
       user_id
     else
-      random_id = rand(10 ** 10).to_i
+      random_id = SecureRandom.uuid
+      # random_id = rand(10 ** 10).to_i
       cookies.signed[:mixpanel_id] = random_id
     end
   end
