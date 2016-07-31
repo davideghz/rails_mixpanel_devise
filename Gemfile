@@ -49,3 +49,5 @@ group :production do
   # Use Puma as the app server
   gem 'puma', '~> 3.0'
 end
+
+ruby "2.3.1"
