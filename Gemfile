@@ -8,6 +8,7 @@ gem 'font-awesome-sass'
 
 # Analytics
 gem 'mixpanel-ruby'
+gem 'mixpanel_client'
 
 # User Authentication
 gem 'devise'

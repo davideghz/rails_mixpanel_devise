@@ -7,3 +7,8 @@ if Rails.env.development?
     http.verify_mode = OpenSSL::SSL::VERIFY_NONE
   end
 end
+
+$mixpanel_client = Mixpanel::Client.new(
+    api_key:    'ENV['MIXPANEL_API_KEY']',
+    api_secret: 'ENV['MIXPANEL_API_SECRET']'
+)
