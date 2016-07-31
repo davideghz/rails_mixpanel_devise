@@ -10,6 +10,8 @@ class RegistrationsController < Devise::RegistrationsController
             '$email' => resource.email
         })
 
+        $tracker.track(resource.id, 'Sign-Up')
+
         cookies.permanent.signed[:mixpanel_id] = resource.id
       end
     end

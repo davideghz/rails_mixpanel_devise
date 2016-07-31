@@ -16,6 +16,7 @@ class SessionsController < Devise::SessionsController
   # GET /resource/sign_out
   def destroy
     cookies.permanent.signed[:mixpanel_id] = current_user.id
+    $tracker.track(current_user.id, 'Sign-Out')
     super
   end
 
