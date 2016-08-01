@@ -8,9 +8,9 @@ class StaticPagesController < ApplicationController
         event:     'Visit Home',
         name:      'Email',
         type:      'general',
-        unit:      'day',
-        interval: 31
-    ).inspect
+        unit:      'month',
+        interval: 1
+    )
 
   end
 
