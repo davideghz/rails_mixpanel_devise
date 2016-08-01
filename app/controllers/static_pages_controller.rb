@@ -10,7 +10,7 @@ class StaticPagesController < ApplicationController
         type:      'general',
         unit:      'day',
         interval: 31
-    ).inspect
+    )
 
   end
 
