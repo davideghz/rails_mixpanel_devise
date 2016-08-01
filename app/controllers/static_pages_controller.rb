@@ -8,12 +8,9 @@ class StaticPagesController < ApplicationController
         event:     'Visit Home',
         name:      'Email',
         type:      'general',
-        unit:      'month',
-        interval: 1
+        unit:      'day',
+        interval: 31
     ).inspect
-
-    # @output = JSON.parse(data)
-    # @output = data.inspect
 
   end
 
