@@ -12,8 +12,8 @@ class StaticPagesController < ApplicationController
         interval: 1
     )
 
-    @output = JSON.parse(data)
-    # @output = data.inspect
+    # @output = JSON.parse(data)
+    @output = data.inspect
 
   end
 
