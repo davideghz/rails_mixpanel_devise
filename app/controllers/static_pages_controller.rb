@@ -3,7 +3,7 @@ class StaticPagesController < ApplicationController
     unique_id = fetch_mixpanel_id
     $tracker.track(unique_id, 'Visit Home')
 
-    @data = $mixpanel_client.request(
+    data = $mixpanel_client.request(
         'events/properties',
         event:     'Visit Home',
         name:      'Email',
@@ -11,6 +11,8 @@ class StaticPagesController < ApplicationController
         unit:      'month',
         interval: 1
     )
+
+    @output = JSON.parse(data)
 
   end
 
