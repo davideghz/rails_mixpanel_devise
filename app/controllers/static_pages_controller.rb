@@ -12,7 +12,7 @@ class StaticPagesController < ApplicationController
         interval: 1
     )
 
-    @output = JSON.parse(data)
+    @output = JSON.parse(data).to_s
 
   end
 
