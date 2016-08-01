@@ -10,6 +10,9 @@ gem 'font-awesome-sass'
 gem 'mixpanel-ruby'
 gem 'mixpanel_client'
 
+# fast JSON generation and parsing for JRuby
+gem 'json', '2.0.2'
+
 # User Authentication
 gem 'devise'
 
